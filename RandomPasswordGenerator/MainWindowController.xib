@@ -7,6 +7,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MainWindowController" customModule="RandomPasswordGenerator" customModuleProvider="target">
             <connections>
+                <outlet property="textField" destination="rsX-KE-KHA" id="PSY-X8-ZDc"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -35,6 +36,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="generatePassword:" target="-2" id="dYE-dZ-LcK"/>
+                        </connections>
                     </button>
                 </subviews>
             </view>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ECC5BC0F1D1F4F68001AA028 /* GeneratePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5BC0E1D1F4F68001AA028 /* GeneratePassword.swift */; };
 		ECF829EC1D1C595200F840BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF829EB1D1C595200F840BD /* AppDelegate.swift */; };
 		ECF829EE1D1C595200F840BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF829ED1D1C595200F840BD /* Assets.xcassets */; };
 		ECF829F11D1C595200F840BD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECF829EF1D1C595200F840BD /* MainMenu.xib */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ECC5BC0E1D1F4F68001AA028 /* GeneratePassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratePassword.swift; sourceTree = "<group>"; };
 		ECF829E81D1C595200F840BD /* RandomPasswordGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomPasswordGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF829EB1D1C595200F840BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECF829ED1D1C595200F840BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,6 +37,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ECC5BC101D1F4F6E001AA028 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECC5BC0E1D1F4F68001AA028 /* GeneratePassword.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		ECC5BC111D1F4F74001AA028 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECF829F91D1C597E00F840BD /* MainWindowController.xib */,
+				ECF829EF1D1C595200F840BD /* MainMenu.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		ECC5BC121D1F4F83001AA028 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ECF829EB1D1C595200F840BD /* AppDelegate.swift */,
+				ECF829F81D1C597E00F840BD /* MainWindowController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		ECF829DF1D1C595200F840BD = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +82,11 @@
 		ECF829EA1D1C595200F840BD /* RandomPasswordGenerator */ = {
 			isa = PBXGroup;
 			children = (
-				ECF829EB1D1C595200F840BD /* AppDelegate.swift */,
+				ECC5BC121D1F4F83001AA028 /* Controller */,
+				ECC5BC111D1F4F74001AA028 /* View */,
+				ECC5BC101D1F4F6E001AA028 /* Model */,
 				ECF829ED1D1C595200F840BD /* Assets.xcassets */,
-				ECF829EF1D1C595200F840BD /* MainMenu.xib */,
 				ECF829F21D1C595200F840BD /* Info.plist */,
-				ECF829F81D1C597E00F840BD /* MainWindowController.swift */,
-				ECF829F91D1C597E00F840BD /* MainWindowController.xib */,
 			);
 			path = RandomPasswordGenerator;
 			sourceTree = "<group>";
@@ -96,6 +123,7 @@
 				TargetAttributes = {
 					ECF829E71D1C595200F840BD = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -136,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECF829FA1D1C597E00F840BD /* MainWindowController.swift in Sources */,
+				ECC5BC0F1D1F4F68001AA028 /* GeneratePassword.swift in Sources */,
 				ECF829EC1D1C595200F840BD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +274,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SSF.RandomPasswordGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -257,6 +287,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SSF.RandomPasswordGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -279,6 +310,7 @@
 				ECF829F71D1C595200F840BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
