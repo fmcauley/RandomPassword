@@ -11,6 +11,10 @@ import Cocoa
 class MainWindowController: NSWindowController {
     
     @IBOutlet weak var textField: NSTextField!
+    
+    override var windowNibName: String? {
+        return "MainWindowController"
+    }
 
     override func windowDidLoad() {
         super.windowDidLoad()
@@ -23,6 +27,10 @@ class MainWindowController: NSWindowController {
         let length = 8
         let password = generateRandomString(length)
         textField.stringValue = password
+    }
+    
+    deinit {
+        print("\(self) will be deallocated")
     }
     
 }
